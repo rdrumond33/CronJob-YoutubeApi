@@ -1,11 +1,11 @@
 {
   "name": "CronJob-YoutubeApi",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "cronjob.js",
   "author": "Rodrigo Drumond de Paula <rodrigodru33@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "node cronjob.js"
+    "start": "node src/cronjob.js"
   },
   "dependencies": {
     "axios": "^0.19.2",
