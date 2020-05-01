@@ -18,8 +18,8 @@ async function createIds(country) {
       method: "get",
       baseURL: 'https://youtube-api-tcc.herokuapp.com/tcc/',
       auth: {
-        username: process.env.USERNAME,
-        password: process.env.PASSWORD
+        username: 'youtube-tcc',
+        password: 'BG@nI2AdmrdH'
       }
     })
 
@@ -31,7 +31,7 @@ async function createIds(country) {
   }
 }
 
-new CronJob(process.env.CRONTAB, () => {
+new CronJob("1/2 * * * *", () => {
   console.log(`Iniciando CronJob data:${new Date()}`)
   start()
 }, null, true, 'America/Sao_Paulo')
