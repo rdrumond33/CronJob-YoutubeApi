@@ -1,12 +1,7 @@
-ifneq ("$(wildcard .env)","")
-        include  .env
-        export
-endif
-
 run: setup
-	yarn start
+	docker run -d -rm cron-youtube 
 
 setup: .make.setup
 .make.setup:
-	yarn install
+	sudo docker build -t cron-youtube .
 	@touch .make.setup
