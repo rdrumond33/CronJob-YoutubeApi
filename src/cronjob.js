@@ -31,7 +31,7 @@ async function createIds(country) {
   }
 }
 
-new CronJob("1/2 * * * *", () => {
+new CronJob("0 */6 * * *", () => {
   console.log(`Iniciando CronJob data:${new Date()}`)
   start()
 }, null, true, 'America/Sao_Paulo')
