@@ -18,8 +18,8 @@ async function createIds(country) {
       method: "get",
       baseURL: 'https://youtube-api-tcc.herokuapp.com/tcc/',
       auth: {
-        username: 'youtube-tcc',
-        password: 'BG@nI2AdmrdH'
+        username: '',
+        password: ''
       }
     })
 
